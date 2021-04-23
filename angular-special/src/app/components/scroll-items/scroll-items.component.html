@@ -1,0 +1,16 @@
+<div class="scroll-container"  #scrollSecction>
+    <app-dates-items *ngFor="let x of items" [specialDate]="x" (click)="elemento(x)" ></app-dates-items>
+
+    <div class="arrows-scroll">
+        <div class="arrows-items left-arrow" (click)="scrollLeft()">
+            <span> < </span>
+        </div>
+
+        <div class="arrows-items rigth-arrow" (click)="scrollRight()">
+            <span>></span>
+        </div>
+
+    </div>
+
+
+</div>
